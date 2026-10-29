@@ -1,0 +1,53 @@
+# SHA-256 of the Windows 7 x64 LifeCam VX-3000 package this repo was tested with.
+# File version 1.3.10.0, driver date 06/04/2009, catalog signed by
+# Microsoft Windows Hardware Compatibility Publisher.
+# Names in brackets come from a download that collapsed the language
+# subfolders into one directory. The installer sorts those out.
+
+62f6762a434de3e9c33ba0c9c5ecd0d05793dd6edd137d3cf95f1fb9eeb1a232  cVX3000.dll
+b274d9c9a4bbe051184bed9d72494907441863fc93afcedb509675bc985914c4  LCCoin30.dll
+5030b81bf6933926c95367abc87b0424eb6a6340d801fcde43b6b69a0aa9f420  LCPrx32.ax
+fbf0c2d8f29e6f6de480e1da00682c51e0965337884f750dbd3a82d6226e821b  LCPrx64.ax
+730aaf558ac24546177af5db838b38b9680507135135b19b43b82f6f77185615  SnxDSC.ini
+d999a686c158062d3298cb1b42be56bf2c525c8de9fa5c5986174822816989ca  TwainUI.dll
+1f3b40685524dc6ecee3c65876f12e0e545e608d48b0d5fe69238de77852d4ee  vVX3000.dll
+b21e55732fd5a5ac50582d71f9d881bd714a7296563cb10fceaf4a744e016cc3  vVX3000.exe
+92eb4d2a58b52633e32c7d3cab38e1e9e7fb1c1c260590c4d8c49233a3904fa5  vVX3x64.dll
+db28404bfa05a9d084c5c1a89aa02a96dde204ac438caf16aae6b4cfe535d6ed  VX3000.cat
+adc26d7ddd9ade4e5b29b8e2c179cc00893b3bbdcf2ae5eccbb2d7c01075e14e  VX3000.ds
+998075d599ad6b5d5295d33a17351610885df71a2de5f52672a09e5ecfb43384  VX3000.inf
+43a484d085661bd458fdb6bb83786ea9af243845a8bd00db5510ffdc2560aaf5  VX3000.ini
+8996335f814c88734cade0c1a302eb4093a16b4041fb91a20c17015ae5cc302f  VX3000.src
+9535362099f0d57c1b545337260a864e7827b55815e480dad2d022d83168e7c1  VX3000.sys
+da710aca91b1b36a88e0deb67a4d5efc063cc73e8da0cd3792486d9efb3e207a  VX3000m.cat
+bbce0d4089909a9aa515cb9122516b4f8e9091b5af4726a46d3e2ceab836fd9c  VX3000m.inf
+
+# 32 bit resource DLLs, one per language, installed as VX3000.dll
+17557f95a4f972ebd565477b3ee2551e5078155b424aa9bb66da83307abda8d0  VX3000.dll [English (United States)]
+b9cf5b95de73ba80cf2ff5ace3863603d3d2d16d44ee0b6008820e36983b0ebd  VX3000.dll [English (United States), second copy]
+fc05e5610715dbc5b66f781f1100dbbb01ee914fd01d1d0f3180f49f676e327c  VX3000.dll [German (Germany)]
+1322b818109cd3a3b6d54d066321bcd1f91a609470f5956c47adfc6930416996  VX3000.dll [Spanish (Spain, International Sort)]
+ceac8f47717121c62174e087bdac0a0b1b14005b38b460bf5b740b1e38026d50  VX3000.dll [French (France)]
+5cd10028009adea5e9356e01cd8c19c74f6a61b2f6576abfe76edcec43171154  VX3000.dll [Italian (Italy)]
+433b537ca2ec9e8255e8451bebf1e861513d267ba0dc642e2fa71ab25a6206d3  VX3000.dll [Japanese (Japan)]
+67475c46b32f08b28635b27727733b0152f8842818a10a4a94beb5b5351d48ff  VX3000.dll [Korean (Korea)]
+14be244c9cc5def0482a670468ed1920465380c13314efc46fdf0738660e0289  VX3000.dll [Portuguese (Brazil)]
+0de2b5dbbb239e0f80a26014b33f67b6157c6bf781b313ea95c891bf02bebc89  VX3000.dll [Portuguese (Portugal)]
+5cc2e58c4f2d8d48e1ab36aacb8e8d076064939ea84b01851cb32d5481eec0d2  VX3000.dll [Russian (Russia)]
+25c8805c0e95011fa1e3362e73b63c6bc8907e07a5794ab11a0801f3fe67d188  VX3000.dll [Chinese (Simplified)]
+535daf7eb44efdf5868d891ea6b18589ab77d42ef541df8516ae93d26a31e4f5  VX3000.dll [Chinese (Traditional, Taiwan)]
+
+# 64 bit resource DLLs, one per language, installed as VX3x64.dll
+d1439dd815afc92fbd22968c092ea591770d144b2df20dbd43356bcf7e73be98  VX3x64.dll [English (United States)]
+a8b26389a1eaf16cbb87042f892b2c357715d1d799853b51d57f16d27958573d  VX3x64.dll [English (United States), second copy]
+44b622f3c8e5783919ebc462e8ef315cb995cd9121f062c83eaf53fe12580d1f  VX3x64.dll [German (Germany)]
+6e40730593e53ba68506d21e929bcfa122332d05a599448c59c32b540c36fabc  VX3x64.dll [Spanish (Spain, International Sort)]
+068e1d4d0ae9e7683f2f652c9ef588a316f730f2a23698f93259797974575faf  VX3x64.dll [French (France)]
+c5ad40771dc9d38b77aa3749d37120427645dc7ab3c11684294d2dc8bb052c5f  VX3x64.dll [Italian (Italy)]
+17115b4161d3c7347b1e3b54b7fd8a3b1c96e1f670fbdd7119c24dc69ae268b9  VX3x64.dll [Japanese (Japan)]
+39782b85daaf067862bd5481d8a2757c7bab86869aa369928179f32f9f48c5b6  VX3x64.dll [Korean (Korea)]
+c61de1186c576bebd4de73f6f490aaa7405432abd5811892dce789704c342835  VX3x64.dll [Portuguese (Brazil)]
+c99c9ff95e0c3edbff0ee47e61232d6cd67b365f28d7a21012ec12a35e256d55  VX3x64.dll [Portuguese (Portugal)]
+e11c57c3c9686e5f39cc481bf1f0e263c6c429a8c1b0b0c823f7934005810c1e  VX3x64.dll [Russian (Russia)]
+085eb50590e6c84feb970f6bec5871440a24b5100ab336b0380899a92db42ac4  VX3x64.dll [Chinese (Simplified)]
+93d1678431d901a9c985f42c7aa4ab06ce61a1417e2e9a3f6454f363e9a272bf  VX3x64.dll [Chinese (Traditional, Taiwan)]

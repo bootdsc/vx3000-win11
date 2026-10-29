@@ -1,0 +1,99 @@
+;==========================================================================
+; USB PC Camera with Microphone (VX3000) INF (for Windows XP64 / Vista64)
+; (c) 2008 Microsoft Corporation
+; Last modified: 2008-01-30
+;==========================================================================
+
+
+
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+provider=%SX%
+CatalogFile.NT = VX3000m.cat
+DriverVer = 05/08/2009,6.0.6002.0
+
+[Manufacturer]
+%Microsoft.Mfg%=Microsoft.Section, ntamd64, ntamd64.6.0
+
+;============================================================================
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Microsoft.Section.ntamd64]
+%USB\VID_045E&PID_00F5&MI_01.DeviceDesc%=USBMic.Microsoft.x64,USB\VID_045E&PID_00F5&MI_01
+
+[Microsoft.Section.ntamd64.6.0]
+%USB\VID_045E&PID_00F5&MI_01.DeviceDesc%=USBMic.Microsoft.x64,USB\VID_045E&PID_00F5&MI_01
+
+[DestinationDirs]
+
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+;============================================================================
+
+[USBMic.Microsoft.x64]
+Include=wdma_usb.inf,ks.inf,wdmaudio.inf
+Needs = USBMic, KS.Registration, WDMAudio.Registration
+AddReg = USBMic.Microsoft.Addreg
+
+;============================================================================
+[USBMic.Microsoft.Addreg]
+HKR,,IgnoreHWString,0x10001,0x01
+
+;============================================================================
+
+[USBMic.Microsoft.x64.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",USBAudio.Interface.Microsoft,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",USBAudio.Interface.Microsoft,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",USBAudio.Interface.Microsoft,
+
+;============================================================================
+
+[USBMic.Microsoft.x64.Services]
+Include=wdma_usb.inf
+Needs = USBAudio.NT.Services
+
+;============================================================================
+
+[USBMic.Microsoft.x64.HW]
+AddReg=USBMic.Microsoft.x64.HW.Addreg
+
+[USBMic.Microsoft.x64.HW.Addreg]
+HKR,,FriendlyName,,%USB\VID_045E&PID_00F5&MI_01.DeviceDesc%
+
+[USBAudio.Interface.Microsoft]
+AddReg=USBAudio.Interface.Addreg.Microsoft,EndpointRoleAffinity.AddReg
+
+[USBAudio.Interface.AddReg.Microsoft]
+HKR,,FriendlyName,,%USB\VID_045E&PID_00F5&MI_01.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+
+[EndpointRoleAffinity.AddReg]
+HKR,"EP\\0", %PKEY_AudioEndpoint_Association%,,%KSNODETYPE_MICROPHONE%
+HKR,"EP\\0", %PKEY_Endpoint_EndpointRoleAffinity%,0x00010001,0x00000204
+
+;==========================================================================
+; String Table (English - 1033)
+;==========================================================================
+[Strings]
+SX="Microsoft"
+
+USBGenericDesc="USB Audio Device"
+
+Microsoft.Mfg="Microsoft"
+USB\VID_045E&PID_00F5&MI_01.DeviceDesc="Microsoft LifeCam VX-3000."
+
+USBAudio.SvcDesc="USB Audio Driver (WDM)"
+
+Proxy.CLSID = "{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994ad04-93ef-11d0-a3cc-00a0c9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSNODETYPE_MICROPHONE = "{DFF21BE1-F70F-11D0-B917-00A0C9223196}"
+PKEY_AudioEndpoint_Association  = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+PKEY_Endpoint_EndpointRoleAffinity = "{b3f8fa53-0004-438e-9003-51a46e139bfc},13"
